@@ -9,19 +9,34 @@
             <a-camera>
                 <a-cursor
                     color="black"
-                    geometry="primitive: ring; radiusInner: .02; radiusOuter: .04"
-                >
+                    geometry="primitive: ring; radiusInner: .02; radiusOuter: .04">
+                    
                 </a-cursor>
             </a-camera>
         </a-entity>
         
         <a-assets>
-            <img id="mrbudiImage" src="images/Best-360-Camera.jpg">
+            <!--<img 
+            id="image1" 
+            src="images/Best-360-Camera.jpg"
+            ></img>-->
+            
+            <video
+                id="antarticaVideo"
+                src="videos/antarticavideo.mp4"
+                muted="true"
+                autoplay="true"
+                loop="true"
+            ></video> 
         </a-assets>
         
         <a-entity id="homepage" visible="true">
-            <a-sky src="#mrbudiImage"></a-sky>
+            <a-sky src="#antarticaVideo"></a-sky>
         </a-entity>
+        
+       <!-- <a-entity id="scene2" visible="true">
+            <a-sky src="#image1"></a-sky>
+        </a-entity>-->
     </a-scene>
   </body>
 </html>
